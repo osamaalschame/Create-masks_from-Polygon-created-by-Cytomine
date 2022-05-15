@@ -3,6 +3,18 @@
 # First is to convert data exported from cytomine to csv file 
 
 
-# Run Convert.py
+# Run prepare.py
 
-*python convert.py --cytomine_file ./data.csv --output_path ./output
+python prepare.py --cytomine_file ./data.csv --output_path ./output
+
+# Run convert.py
+
+python convert.py --image_id      #images and id as list [[image,id],[image,id],...]
+                  --images        #./images
+                  --csv_data      # ./data_csv
+                  --output        # ./output
+                  
+# Output
+![](output.png)
+                  
+
